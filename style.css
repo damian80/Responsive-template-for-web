@@ -27,6 +27,32 @@ a {
 	color: white;
 	text-decoration: none;
 }
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+/* GRID */
+.grid-wrapper {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.box > img {
+	width: 100%;
+}
+.box {
+	background-color: #fff;
+	padding: 100px;
+	margin: 20px;
+}
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
 .zone:hover {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
 		inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
